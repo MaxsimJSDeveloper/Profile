@@ -1,7 +1,12 @@
 import clsx from "clsx";
 import css from "./FriendListItem.module.css";
+import { FriendInfoProps } from "./FriendListItem.types";
 
-const FriendListItem = ({ avatar, name, isOnline }) => {
+const FriendListItem: React.FC<FriendInfoProps> = ({
+  avatar,
+  name,
+  isOnline,
+}) => {
   return (
     <div className={css.friendsItemWrapper}>
       <img className={css.friendPhoto} src={avatar} alt="Avatar" width="48" />

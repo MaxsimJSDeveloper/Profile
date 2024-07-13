@@ -1,8 +1,9 @@
 import FriendListItem from "../FriendListItem/FriendListItem";
 
 import css from "./FriendList.module.css";
+import { FriendsInfoProps } from "./FriendList.types";
 
-const FriendList = ({ friends }) => {
+const FriendList: React.FC<FriendsInfoProps> = ({ friends }) => {
   return (
     <ul className={css.friends}>
       {friends.map((friend) => (

@@ -1,9 +1,10 @@
 import css from "./Profile.module.css";
+import { ProfileProps } from "./Profile.types";
 
-const Profile = ({ userData }) => {
+const Profile: React.FC<ProfileProps> = ({ userData }) => {
   const {
     avatar,
-    name,
+    username,
     tag,
     location,
     stats: { followers, views, likes },
@@ -21,7 +22,7 @@ const Profile = ({ userData }) => {
             width="250"
           />
         </div>
-        <p className={css.userName}>{name}</p>
+        <p className={css.userName}>{username}</p>
         <div className={css.userInfo}>
           <p>@{tag}</p>
           <p>{location}</p>

@@ -1,6 +1,7 @@
 import css from "./TransactionHistory.module.css";
+import { TransactionHistoryProps } from "./TransactionHistory.types";
 
-const TransactionHistory = ({ items }) => {
+const TransactionHistory: React.FC<TransactionHistoryProps> = ({ items }) => {
   return (
     <table className={css.transactionsTable}>
       <thead className={css.transactionsName}>
