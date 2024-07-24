@@ -5,11 +5,11 @@ interface Stats {
 }
 
 export interface User {
-  username: string;
+  readonly username: string;
   tag: string;
-  location: string;
-  avatar: string;
-  stats: Stats;
+  readonly location: string;
+  readonly avatar: string;
+  readonly stats: Stats;
 }
 
 export interface ProfileProps {
