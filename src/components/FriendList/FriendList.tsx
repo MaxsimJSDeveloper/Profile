@@ -1,13 +1,13 @@
 import FriendListItem from "../FriendListItem/FriendListItem";
-
-import css from "./FriendList.module.css";
+import { friendsList, friendsItem } from "./FriendList.styles";
 import { FriendsInfoProps } from "./FriendList.types";
+import { css, cx } from "@emotion/css";
 
 const FriendList: React.FC<FriendsInfoProps> = ({ friends }) => {
   return (
-    <ul className={css.friends}>
+    <ul className={cx(friendsList)}>
       {friends.map((friend) => (
-        <li className={css.friendsItem} key={friend.id}>
+        <li className={cx(friendsItem)} key={friend.id}>
           <FriendListItem
             avatar={friend.avatar}
             name={friend.name}
