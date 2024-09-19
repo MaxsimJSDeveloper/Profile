@@ -1,12 +1,23 @@
-# React + Vite
+# Profile
 
-npm run dev
+## Description
+A personal profile website built with React and TypeScript. This project showcases personal information, skills, projects, and experience in a clean and modern design. It is deployed on Vercel for fast performance and easy accessibility.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo: [Profile](https://profile-pi-nine.vercel.app)
 
-Currently, two official plugins are available:
+## Features
+- Personal info and bio section
+- Skills and expertise display
+- Project showcase with links
+- Responsive design for mobile and desktop
+- Developed with TypeScript for enhanced type safety and scalability
+- Hosted on Vercel
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+- React
+- TypeScript
+- CSS
+- HTML
+- Vite
+- Vercel
 
-<!-- експорт деволт, деструктуризация -->
